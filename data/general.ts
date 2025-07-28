@@ -14,7 +14,7 @@ export const generalData = {
   website: "https://srummanf.vercel.app",
   statusEmoji: "🌖",
   about:
-    "Hey there! I'm John, a senior front-end developer with 10 years of experience in web development. \n loper with 10 years of experience in web development. \n\n loper with 10 years of experience in web development.",
+    "Hi, I'm Rumman, a Software Developer with a passion for building impactful web applications. I specialize in full-stack development, particularly with the MERN stack, and have a keen interest in AI and data analysis.",
   contacts: [
     {
       label: "Email",
