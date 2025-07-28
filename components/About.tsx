@@ -7,11 +7,11 @@ const About = () => {
     <>
       <section className="my-9 text-sm">
         <h3
-          className={`${plusJakartaSans.className} mb-1 text-slate-900 dark:text-slate-100`}
+          className={`${plusJakartaSans.className} mb-1 text-slate-900 dark:text-[#eeeeee]`}
         >
           About
         </h3>
-        <div className="text-slate-600 dark:text-slate-300">
+        <div className="text-slate-600 dark:text-[#bbbbbb]">
           {generalData.about.split("\n").map((line, index) => (
             <p key={index}>
               {line}

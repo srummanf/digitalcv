@@ -40,15 +40,15 @@ const AvatarAndName = () => {
         </div>
 
         <div className="ml-4">
-          <h1 className="text-xl text-slate-900 dark:text-slate-100">
+          <h1 className="text-xl text-slate-900 dark:text-[#eeeeee] font-bold">
             {generalData.name}
           </h1>
-          <p className="text-sm text-slate-600 dark:text-slate-300">
+          <p className="text-sm text-slate-600 dark:text-[#bbbbbb]">
             {generalData.jobTitle}
           </p>
 
           {generalData.website && (
-            <span className="mt-1 inline-block rounded-full bg-slate-200/80 px-3 py-1 text-sm text-slate-700 dark:bg-[#383838] dark:text-slate-300">
+            <span className="mt-1 inline-block rounded-full bg-slate-200/80 px-3 py-1 text-sm text-slate-700 dark:bg-[#383838] dark:text-[#cdcdcd]">
               <a
                 href={generalData.website}
                 target="_blank"

@@ -39,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} dark:bg-[#222222]`}>
+      <body className={`${manrope.className} dark:bg-[#222222] dark:text-[#bbbbbb]`}>
         {children}
       </body>
     </html>

@@ -5,16 +5,16 @@ const Contact = () => {
   return (
     <>
       <section className="my-14 text-sm">
-        <h3 className="mb-6 text-slate-900 dark:text-slate-100">Contact</h3>
+        <h3 className="mb-6 text-slate-900 dark:text-[#eeeeee]">Contact</h3>
         <div className="flex flex-col gap-6">
           {generalData.contacts.map((contact, index) => (
             <div className="flex" key={index}>
               <div
-                className={`${plusJakartaSans.className} mr-8 max-w-[100px] w-full text-slate-400 dark:text-slate-400`}
+                className={`${plusJakartaSans.className} mr-8 max-w-[100px] w-full text-slate-400 dark:text-[#888888]`}
               >
                 {contact.label}
               </div>
-              <div className="flex flex-col flex-1 text-slate-900 dark:text-slate-100">
+              <div className="flex flex-col flex-1 text-slate-900 dark:text-[#bbbbbb]">
                 <a
                   href={contact.href}
                   target="_blank"
