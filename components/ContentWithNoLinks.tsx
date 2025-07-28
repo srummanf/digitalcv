@@ -1,6 +1,6 @@
 import React from "react";
 import { plusJakartaSans } from "@/app/fonts";
-import type { ContentWithNoLinks } from "@/data/content";
+import type { ContentWithNoLinks } from "@/data/contentWithNoLinks";
 
 type ContentProps = ContentWithNoLinks;
 

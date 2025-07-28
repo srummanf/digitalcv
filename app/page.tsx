@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ThemeSwitch from "@/components/theme-switch";
 import { generalData } from "@/data/general";
-import { contentData } from "@/data/content";
+import { contentData } from "@/data/contentWithNoLinks";
 import { projectData } from "@/data/contentWithLinks";
 import ContentWithNoLinks from "@/components/ContentWithNoLinks";
 import ContentWithLinks from "@/components/ContentWithLinks";
