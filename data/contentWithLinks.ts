@@ -1,4 +1,27 @@
-// @/data/contentWithLinks.ts
+/**
+ * @file contentWithLinks.ts
+ * @description
+ * This module defines types and categorized data for sections containing external links.
+ * These are usually associated with websites, portfolios, talks, exhibitions, or publications.
+ *
+ * Types:
+ * - LinkItem: Represents a single linked content entry with metadata such as date, title, URL, subtitle, and optional description.
+ * - ContentWithLinks: Represents a group of `LinkItem`s under a common section title.
+ *
+ * Data:
+ * - projectData: An array of sections, each conforming to `ContentWithLinks`.
+ *   Useful for rendering resume-like sections or portfolios with external references.
+ *
+ * Common Categories in ContentWithLinks:
+ * - Projects
+ * - Side Projects
+ * - Exhibitions
+ * - Speaking
+ * - Writing
+ * - Awards
+ * - Features
+ * - Certifications
+ */
 
 export type LinkItem = {
   date: string;
@@ -61,4 +84,19 @@ export const projectData: ContentWithLinks[] = [
       },
     ],
   },
+
+  // @NOTE: You can add more sections here
+  // {
+  //   title: "Awards",
+  //   items: [
+  //     {
+  //       date: "2023",
+  //       title: "Smart India Hackathon Finalist",
+  //       url: "https://sih.gov.in",
+  //       subTitle: "National Level",
+  //       description:
+  //         "Selected among top national teams for building AI-backed citizen grievance redressal system.",
+  //     },
+  //   ],
+  // },
 ];
