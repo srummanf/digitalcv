@@ -1,12 +1,5 @@
 // app/fonts.ts
-import { Alex_Brush, Work_Sans, Plus_Jakarta_Sans, Inter } from "next/font/google";
-
-export const alexBrush = Alex_Brush({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
+import { Work_Sans, Plus_Jakarta_Sans, Inter } from "next/font/google";
 export const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],

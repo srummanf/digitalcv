@@ -40,7 +40,7 @@ const AvatarAndName = () => {
         </div>
 
         <div className="ml-4">
-          <h1 className="text-xl text-slate-900 dark:text-[#eeeeee] font-bold">
+          <h1 className="text-xl text-slate-900 dark:text-[#eeeeee] font-normal">
             {generalData.name}
           </h1>
           <p className="text-sm text-slate-600 dark:text-[#bbbbbb]">

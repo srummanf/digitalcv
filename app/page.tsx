@@ -1,11 +1,7 @@
-import Image from "next/image";
-import ThemeSwitch from "@/components/ThemeSwitch";
-import { generalData } from "@/data/general";
 import { contentData } from "@/data/contentWithNoLinks";
 import { projectData } from "@/data/contentWithLinks";
 import ContentWithNoLinks from "@/components/ContentWithNoLinks";
 import ContentWithLinks from "@/components/ContentWithLinks";
-import { plusJakartaSans } from "./fonts";
 import Contact from "@/components/Contact";
 import About from "@/components/About";
 import AvatarAndName from "@/components/AvatarAndName";
@@ -33,9 +29,7 @@ export default function Home() {
       <Contact />
 
       {/* Theme Switch Button Section */}
-      {/* <div className="px-6 absolute left-0 bottom-6">
-        <ThemeSwitch />
-      </div> */}
+      {/* <ThemeSwitch /> */}
     </main>
   );
 }

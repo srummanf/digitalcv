@@ -24,6 +24,18 @@
  * - This file excludes links. If a section requires external references, consider using `contentWithLinks.ts` instead.
  */
 
+export type ContentWithNoLinks = {
+  title: string;
+  items: {
+    title: string;
+    subTitle: string;
+    date: string;
+    description: string;
+  }[];
+};
+
+export type ContentData = ContentWithNoLinks[];
+
 export const contentData = [
   {
     title: "Work Experience",
@@ -78,15 +90,3 @@ export const contentData = [
   //     ],
   //   },
 ];
-
-export type ContentWithNoLinks = {
-  title: string;
-  items: {
-    title: string;
-    subTitle: string;
-    date: string;
-    description: string;
-  }[];
-};
-
-export type ContentData = ContentWithNoLinks[];
