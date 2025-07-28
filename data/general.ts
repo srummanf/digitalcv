@@ -12,7 +12,7 @@ export const generalData = {
   avatar: "/images/srummanf.jpg",
   jobTitle: "Software Developer",
   website: "https://srummanf.vercel.app",
-  statusEmoji: "🌙",
+  statusEmoji: "🌖",
   about:
     "Hey there! I'm John, a senior front-end developer with 10 years of experience in web development. \n loper with 10 years of experience in web development. \n\n loper with 10 years of experience in web development.",
   contacts: [
