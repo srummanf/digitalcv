@@ -5,7 +5,7 @@ import { generalData } from "@/data/general";
 const AvatarAndName = () => {
   return (
     <>
-      <section className="flex items-center">
+      <section className="flex items-center font-normal">
         <div className="relative w-20 h-20">
           <Image
             alt="Author"

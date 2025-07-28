@@ -18,28 +18,22 @@ export const generalData = {
   contacts: [
     {
       label: "Email",
-      value: "john.doe@gmail.com",
-      href: "mailto:john.doe@gmail.com",
+      value: "rummanfardeen4567@gmail.com",
+      href: "mailto:rummanfardeen4567@gmail.com",
     },
     {
       label: "Twitter",
-      value: "ibelick",
-      href: "https://twitter.com/ibelick",
+      value: "srummanf",
+      href: "https://twitter.com/srummanf",
     },
     {
       label: "Github",
-      value: "ibelick",
-      href: "https://github.com/ibelick",
-    },
-    {
-      label: "Read.CV",
-      value: "ibelick",
-      href: "https://read.cv/ibelick",
+      value: "srummanf",
+      href: "https://github.com/srummanf",
     },
   ],
 };
 
 /**
  * Status - Use Circular Emoji for Better Visibility - 🟢, 🔴, 🟡, 🔵, 🟣, ⚫, ⚪, 🟠, 🟤, 🟩, 🟦, 🟥, 🟪, 🟫, 🌑, 🌕, 🌖, 🌗, 🌘, 🌒
-
  */

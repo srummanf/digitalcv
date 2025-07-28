@@ -4,7 +4,7 @@ import { generalData } from "@/data/general";
 const Contact = () => {
   return (
     <>
-      <section className="my-14 text-sm">
+      <section className="my-14 text-sm font-normal">
         <h3 className="mb-6 text-slate-900 dark:text-[#eeeeee]">Contact</h3>
         <div className="flex flex-col gap-6">
           {generalData.contacts.map((contact, index) => (

@@ -6,7 +6,7 @@ type ContentProps = ContentWithNoLinks;
 
 const ContentWithNoLinks: React.FC<ContentProps> = ({ title, items }) => {
   return (
-    <section className="my-14 text-sm">
+    <section className="my-14 text-sm font-normal">
       <h3
         className={`${plusJakartaSans.className} mb-6 text-slate-900 dark:text-[#eeeeee]`}
       >

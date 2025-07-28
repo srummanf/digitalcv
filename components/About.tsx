@@ -5,7 +5,7 @@ import { generalData } from "@/data/general";
 const About = () => {
   return (
     <>
-      <section className="my-9 text-sm">
+      <section className="my-9 text-sm font-normal">
         <h3
           className={`${plusJakartaSans.className} mb-1 text-slate-900 dark:text-[#eeeeee]`}
         >
