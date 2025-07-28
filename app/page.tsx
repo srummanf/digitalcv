@@ -12,33 +12,58 @@ export default function Home() {
     <main className="max-w-xl mx-auto px-6 py-20 relative min-h-screen font-light">
       {/* Avatar & Name */}
       <section className="flex items-center">
-        <Image
-          alt="Author"
-          src={generalData.avatar}
-          width={80}
-          height={80}
-          className="rounded-full object-cover"
-        />
+        <div className="relative w-20 h-20">
+          <Image
+            alt="Author"
+            src={generalData.avatar}
+            width={80}
+            height={80}
+            className="rounded-full object-cover"
+          />
+
+          <div className="absolute -bottom-1 -right-1 rounded-full bg-slate-200 dark:bg-[#383838] p-1 border border-white dark:border-slate-800">
+            <span className="text-base">
+              {generalData.statusEmoji ? (
+                generalData.statusEmoji
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 text-slate-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              )}
+            </span>
+          </div>
+        </div>
+
         <div className="ml-4">
-          <h1
-            className={`${plusJakartaSans.className} mb-0.5 text-xl text-slate-900 dark:text-slate-100`}
-          >
+          <h1 className="text-xl text-slate-900 dark:text-slate-100">
             {generalData.name}
           </h1>
-          <p
-            className={`${plusJakartaSans.className} text-slate-600 dark:text-slate-300 text-sm`}
-          >
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             {generalData.jobTitle}
           </p>
+
           {generalData.website && (
-            <span className="text-sm text-slate-400 dark:text-slate-400">
+            <span className="mt-1 inline-block rounded-full bg-slate-200/80 px-3 py-1 text-sm text-slate-700 dark:bg-[#383838] dark:text-slate-300">
               <a
                 href={generalData.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                {generalData.website.replace(/(^\w+:|^)\/\//, "").replace("www.", "")}
+                {generalData.website
+                  .replace(/(^\w+:|^)\/\//, "")
+                  .replace("www.", "")}
               </a>
             </span>
           )}
