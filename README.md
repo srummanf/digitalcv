@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![1753718233411](image/README/1753718233411.png)
 
-## Getting Started
+# ReadCV Style Inspired CV Portfolio
 
-First, run the development server:
+A clean, minimalist, and developer-friendly personal site inspired by [Read.cv](https://read.cv) — designed to showcase your **Work Experience**, **Projects**, **Education**, and **Side Hustles** with elegance and accessibility.
+
+---
+
+## How to Use
+
+All your portfolio content lives inside the `data/` folder — no CMS, no backend needed. Just edit the files to update your personal info.
+
+### `data/contentWithNoLinks.ts`
+
+Use this file for sections that **do not contain links**, like:
+
+- Work Experience
+- Education
+- Volunteering
+
+---
+
+### `data/contentWithLinks.ts`
+
+Use this for sections where **each item links out to something**, such as:
+
+- Projects
+- Side Projects
+- Awards
+- Features
+- Blog Posts / Writings
+- Certification
+
+---
+
+### Update Profile Photo
+
+Place your profile image in `public/images/avatar.png`.
+
+---
+
+### Add New Sections
+
+You can create additional categories (e.g., `Talks`, `Exhibitions`, `Writing`) by following the same format and adding new entries to either file.
+
+If you're unsure which file to use:
+
+- Use `contentWithLinks.ts` if each item **has a URL**
+- Use `contentWithNoLinks.ts` if it's **just descriptive info**
+
+---
+
+## Installation
+
+ **Prerequisites** :
+
+* [Node.js](https://nodejs.org/en/) v14 or newer
+* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+ **Clone the repository** :
+
+```bash
+git clone https://github.com/srummanf/digitalcv.git
+cd Portfolio-v2
+```
+
+ **Install dependencies** :
+
+```bash
+npm install
+# or
+yarn install
+```
+
+---
+
+## Usage
+
+ **Run locally** :
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000/) to view in browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ **Build for production** :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
+## Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/)
+
+## Credits
+
+* Inspired by original read.cv and clone by Ibelick ([View Github Repo](https://github.com/ibelick/nextjs-resume)). A curriculum vitae inspired by read.cv, build with Next.js and Tailwind CSS
+
+# My CV in read.cv Style
+
+----
+
+<table>
+  <tr>
+    <td align="left" width="50%">
+      <strong>By</strong><br />
+      Shaikh Rumman Fardeen<br />
+      <a href="https://github.com/srummanf">GitHub: @srummanf</a><br />
+      <a href="mailto:rummanfardeen4567@gmail.com">rummanfardeen4567@gmail.com</a>
+    </td>
+  </tr>
+</table>
