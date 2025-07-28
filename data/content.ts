@@ -47,7 +47,7 @@ export const contentData = [
   //   },
 ];
 
-export type Content = {
+export type ContentWithNoLinks = {
   title: string;
   items: {
     title: string;
@@ -57,4 +57,4 @@ export type Content = {
   }[];
 };
 
-export type ContentData = Content[];
+export type ContentData = ContentWithNoLinks[];
