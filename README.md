@@ -109,6 +109,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Credits
 
 * Inspired by original read.cv and clone by Ibelick ([View Github Repo](https://github.com/ibelick/nextjs-resume)). A curriculum vitae inspired by read.cv, build with Next.js and Tailwind CSS
+* Inspired by readcv clone by Mark Tomlinson ([View Github Repo](https://github.com/mark-tomlinson-dev/pywang-cv)).
+  
 
 # My CV in read.cv Style
 
