@@ -1,6 +1,6 @@
 import React from "react";
 import { plusJakartaSans } from "@/app/fonts";
-import { projectData, type ContentWithLinks } from "@/data/contentWithLinks";
+import { type ContentWithLinks } from "@/data/contentWithLinks";
 
 type ContentProps = ContentWithLinks;
 
@@ -44,10 +44,23 @@ const ContentWithLinks: React.FC<ContentProps> = ({ title, items }) => {
               <p className="text-slate-600 dark:text-[#b0b0b0]">
                 {item.subTitle}
               </p>
+
               {item.description && (
-                <p className="text-slate-600 dark:text-[#bbbbbb] mt-2">
-                  {item.description}
-                </p>
+                <div className="text-slate-600 dark:text-[#bbbbbb] mt-2">
+                  {item.description.includes("/li") ? (
+                    <ul className="list-disc ml-5 space-y-1">
+                      {item.description
+                        .split("/li")
+                        .map((line) => line.trim())
+                        .filter(Boolean)
+                        .map((point, i) => (
+                          <li key={i}>{point}</li>
+                        ))}
+                    </ul>
+                  ) : (
+                    <p>{item.description}</p>
+                  )}
+                </div>
               )}
             </div>
           </div>

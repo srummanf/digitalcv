@@ -9,10 +9,13 @@
  *
  * Structure:
  * Each item in a section includes:
- * -title: The main title (e.g., job title or degree).
- * -subTitle: Additional context like company, location, or university.
- * -data: The time range of the activity.
- * -description: A brief summary of responsibilities or achievements.
+ * - title: The main title (e.g., job title or degree).
+ * - subTitle: Additional context like company, location, or university.
+ * - date: The time range of the activity.
+ * - description: A brief summary of responsibilities or achievements.
+ *   - Supports inline bullet points using `/li` as a custom marker.
+ *     Example: "/li Bullet 1 /li Bullet 2"
+ *     These will render as an unordered list in the UI.
  *
  * Data:
  * - `contentData`: The main exported dataset used to render timeline-like views such as:
@@ -36,22 +39,21 @@ export type ContentWithNoLinks = {
 
 export type ContentData = ContentWithNoLinks[];
 
-export const contentData = [
-  
+export const contentData: ContentData = [
   {
     title: "Education",
     items: [
       {
-        title: "Bachelor of Technology ",
+        title: "Bachelor of Technology",
         subTitle: "Vellore Institute of Technology",
         date: "2021 - 2025",
-        description: "Specialized in Computer Science and Engineering.",
+        description: "/li Specialized in Computer Science and Engineering.",
       },
       {
         title: "Higher Secondary Schooling",
         subTitle: "Saifee Golden Jubilee English School",
         date: "2018 - 2020",
-        description: "Specialized in Physics, Chemistry, and Mathematics.",
+        description: "/li Specialized in Physics, Chemistry, and Mathematics.",
       },
     ],
   },
@@ -62,13 +64,18 @@ export const contentData = [
         title: "Full Stack Developer Intern",
         subTitle: "Oxlac - Remote",
         date: "Oct 2023",
-        description: "Developed and deployed full-stack web applications using the MERN stack, focusing on Next.js and Node.js. Collaborated with designers and developers to deliver client-facing features and internal tools for startups. Followed agile development practices to meet tight deadlines, enhancing project efficiency.",
+        description:
+          "/li Developed and deployed full-stack web applications using the MERN stack, focusing on Next.js and Node.js." +
+          " /li Collaborated with designers and developers to deliver client-facing features and internal tools." +
+          " /li Followed agile practices to enhance project efficiency and meet deadlines.",
       },
       {
         title: "WebFlow Developer",
         subTitle: "Capx - Freelance",
         date: "Oct 2023 - Oct 2023",
-        description: "Led the design and development of the inaugural website prototype for Capx Tokens and the Capx App using Webflow. Translated brand vision into an engaging, interactive, and scalable website experience.",
+        description:
+          "/li Led design and development of the Capx Tokens website using Webflow." +
+          " /li Translated brand vision into a scalable and engaging digital presence.",
       },
     ],
   },
@@ -79,56 +86,54 @@ export const contentData = [
         title: "Member ~ Technical Lead ~ Advisory",
         subTitle: "HackClub VITC",
         date: "Nov 2022 - Apr 2025",
-        description: "Contributed to the HackClub community by leading technical initiatives, mentoring new members, and advising on project development. Focused on enhancing the technical skills of club members through workshops and collaborative projects.",
+        description:
+          "/li Led technical initiatives within the club." +
+          " /li Mentored new members and advised on projects." +
+          " /li Conducted workshops to enhance tech skills.",
       },
       {
         title: "Member ~ Programming Lead ~ Advisory",
         subTitle: "SEDS VITC",
         date: "Mar 2022 - Apr 2025",
-        description: "Engaged in the Space Exploration and Development Society (SEDS) at VITC, focusing on programming and technical leadership. Provided guidance on software development projects, fostering a collaborative environment for innovation in space-related technologies.",
+        description:
+          "/li Focused on programming and technical leadership." +
+          " /li Guided software development projects in the space domain." +
+          " /li Encouraged innovation through collaboration.",
       },
       {
         title: "Member",
         subTitle: "DAO VITC",
         date: "Mar 2023 - Mar 2024",
-        description: "Planned and executed multiple technical and non-technical events, ensuring smooth coordination and high participant engagement. Organized inter-college hackathons, managing registrations, logistics, and judging workflows to deliver impactful experiences.Handled end-to-end logistics for events, including scheduling, venue coordination, and resource planning.",
+        description:
+          "/li Planned and executed technical and non-technical events." +
+          " /li Organized inter-college hackathons with full logistics." +
+          " /li Managed scheduling, venue coordination, and resources.",
       },
       {
         title: "Member ~ Technical lead",
         subTitle: "BiosphereClub VITC",
         date: "Feb 2022 - May 2023",
-        description: "Oversaw all technical initiatives for The Biosphere Club, enhancing website functionality and event platform readiness. Supported the Senior Lead in managing GitHub repositories, enhancing collaboration and code quality. Contributed to the frontend development of club projects, enhancing user engagement.",
+        description:
+          "/li Oversaw technical initiatives and improved website functionality." +
+          " /li Managed GitHub repositories and enhanced collaboration." +
+          " /li Contributed to frontend projects for better engagement.",
       },
       {
         title: "Microsoft Learn Student Ambassador",
         subTitle: "Microsoft",
         date: "Jul 2023 - Jun 2024",
-        description: "Engaged in community outreach and technical workshops, promoting Microsoft technologies and tools. Facilitated learning sessions on cloud computing, AI, and software development best practices.",
+        description:
+          "/li Promoted Microsoft technologies through workshops." +
+          " /li Led sessions on Azure, AI, and dev tools.",
       },
       {
         title: "Designer for Outreach Department",
         subTitle: "VITC",
         date: "Nov 2022 - Apr 2023",
-        description: "Designed engaging story layouts and post templates for VIT's official Instagram and Facebook platforms.Ensured a cohesive visual identity across various campaigns, club announcements, and event promotions.",
+        description:
+          "/li Designed story layouts and post templates for Instagram & Facebook." +
+          " /li Ensured cohesive visual identity for campaigns and events.",
       },
     ],
   },
-  //   @NOTE: You can add more sections here
-  //  {
-  //     title: "Education",
-  //     items: [
-  //       {
-  //         title: "Master's Degree in Computer Science",
-  //         subTitle: "University of Paris",
-  //         date: "2015 - 2016",
-  //         description: "Specialized in web development.",
-  //       },
-  //       {
-  //         title: "Bachelor's Degree in Computer Science",
-  //         subTitle: "University of Paris",
-  //         date: "2012 - 2015",
-  //         description: "Specialized in web development.",
-  //       },
-  //     ],
-  //   },
 ];

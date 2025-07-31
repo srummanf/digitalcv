@@ -21,6 +21,10 @@
  * - Awards
  * - Features
  * - Certifications
+ *
+ * Notes:
+ * - You can use `/li` within the `description` to render bullet points in the UI.
+ *   Example: "/li Bullet point one /li Bullet point two"
  */
 
 export type LinkItem = {
@@ -46,7 +50,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/ElNino-Anomaly-Study",
         subTitle: "Data Analysis · Python",
         description:
-          "Analyzes El Niño’s effect on Chennai groundwater. Identifies vulnerable zones and proposes sustainable solutions using predictive modeling.",
+          "/li Analyzes El Niño’s effect on Chennai groundwater. /li Identifies vulnerable zones using predictive modeling. /li Proposes sustainable water usage policies.",
       },
       {
         date: "Jan 2025 - Mar 2025",
@@ -54,7 +58,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Devhub",
         subTitle: "Full-Stack Development",
         description:
-          "Centralized platform for developer tools and UI kits to streamline the Hacknight'25 experience with a curated, high-productivity ecosystem.",
+          "/li Developer tool aggregation platform. /li Streamlines Hacknight'25 experience. /li Curated ecosystem for productivity.",
       },
       {
         date: "Aug 2024 - Nov 2024",
@@ -62,7 +66,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Fraud-Blockchain-Transaction-Detection",
         subTitle: "Machine Learning · Blockchain",
         description:
-          "Detects Ethereum fraud pre-confirmation using ML in mempool, preventing resource misuse and increasing blockchain security.",
+          "/li Detects Ethereum fraud before confirmation. /li Uses mempool behavior and ML classification. /li Improves blockchain security.",
       },
       {
         date: "Jan 2024 - Mar 2024",
@@ -70,7 +74,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Chaos-Map-Data-Encryption",
         subTitle: "Python · Cryptography",
         description:
-          "Implements Arnold and Henon chaos maps for secure image-based data encryption, enhancing digital communication confidentiality.",
+          "/li Implements Arnold and Henon chaos maps. /li Encrypts data visually in images. /li Enhances digital confidentiality.",
       },
       {
         date: "Jan 2024 - Mar 2024",
@@ -78,7 +82,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Dyslexia-Detection-from-Handwriting",
         subTitle: "Machine Learning · Python · AI",
         description:
-          "Predicts dyslexia from handwriting using YOLOv8 and Streamlit, enabling early diagnosis through visual and auditory tests.",
+          "/li Predicts dyslexia from handwriting patterns. /li Uses YOLOv8, CNN, and Streamlit UI. /li Enables early diagnosis through visual & auditory tests.",
       },
       {
         date: "Jan 2024 - Mar 2024",
@@ -86,7 +90,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Retinopathy-Detection",
         subTitle: "Machine Learning · Python",
         description:
-          "Compares multiple CNN architectures for detecting ROP early in infants using medical image data.",
+          "/li Uses CNN architectures on infant retina data. /li Enables early-stage detection. /li Improves infant medical care outcomes.",
       },
       {
         date: "Dec 2023",
@@ -94,7 +98,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://ethglobal.com/showcase/decohere-ethindia2023",
         subTitle: "Full-Stack · Solidity · Web3",
         description:
-          "Web3 event booking platform with smart contracts, Push Protocol notifications, and Next.js UI; won EthIndia Scroll prize.",
+          "/li Web3 event booking platform. /li Push Protocol + Smart Contracts. /li Won Scroll Prize at EthIndia.",
       },
       {
         date: "Feb 2023 - Mar 2023",
@@ -102,7 +106,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/ANPR-FRS-System",
         subTitle: "Figma · UI/UX Design",
         description:
-          "ANPR + FRS system detecting traffic violations in poor visibility with image stitching, facial recognition, and ANPR recovery.",
+          "/li Detects traffic violations in low visibility. /li Combines ANPR, image stitching, and facial recognition.",
       },
     ],
   },
@@ -114,8 +118,7 @@ export const projectData: ContentWithLinks[] = [
         title: "srummanf's vetrina",
         url: "https://github.com/srummanf/vetrina",
         subTitle: "Next.js · TailwindCSS · Vercel",
-        description:
-          "𓂃 srummanf's vetrina 𓂃",
+        description: "/li Minimal portfolio showcase. /li Fast, responsive layout.",
       },
       {
         date: "2025",
@@ -123,15 +126,14 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/poietes",
         subTitle: "Next.js · TailwindCSS · Vercel",
         description:
-          "Jotting down thoughts, drafting ideas, or creating polished notes",
+          "/li Thought journal and idea draft space. /li Clean design and flexible content structure.",
       },
       {
         date: "2025",
         title: "Pretty Browser View",
         url: "https://github.com/srummanf/pretty-browser-view",
         subTitle: "Next.js · TailwindCSS · Vercel",
-        description:
-        "A Draggable, Resizable Web Preview Interface",
+        description: "/li Resizable browser preview window. /li Draggable tab-like layout.",
       },
       {
         date: "2025",
@@ -139,7 +141,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Ramadan",
         subTitle: "Next.js · TailwindCSS · Vercel",
         description:
-        "A modern, responsive React application showcasing the virtues and blessings of Ramadan. Built with React, TypeScript, and Tailwind CSS.",
+          "/li Celebrates virtues and blessings of Ramadan. /li Built with React, TypeScript, and Tailwind.",
       },
       {
         date: "2025",
@@ -147,7 +149,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Poetic-Whispers",
         subTitle: "Next.js · TailwindCSS · Vercel",
         description:
-        "Poetic Whispers is where classics come to life. This application celebrates the enduring magic of the greatest poets in history.",
+          "/li Revives classic poetry through interactive layouts. /li Features greatest poets in history.",
       },
       {
         date: "2025",
@@ -155,7 +157,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/srummanf/Interactive-Candle-Blow-Birthday-Cake",
         subTitle: "HTML · CSS · JS",
         description:
-          "An interactive HTML, CSS, and JavaScript project that simulates a birthday cake where users can add candles and blow them out using mouse gestures.",
+          "/li Users can add and blow candles interactively. /li Built using basic JS gesture tracking.",
       },
     ],
   },
@@ -168,7 +170,7 @@ export const projectData: ContentWithLinks[] = [
         url: "https://ethglobal.com/showcase/decohere-1qov4",
         subTitle: "Scroll Track Winner",
         description:
-          "Awarded for DeCoHere, a Web3 event booking platform, at ETHIndia 2023.",
+          "/li Won Scroll Prize for DeCoHere. /li Built a smart-contract-based event app.",
       },
       {
         date: "Mar 2023",
@@ -176,23 +178,8 @@ export const projectData: ContentWithLinks[] = [
         url: "https://github.com/mohammadshaad/codephilics-vitish",
         subTitle: "AI-Based ANPR System with FRS",
         description:
-          "Ranked among the top 10 teams for developing an AI-based ANPR system with facial recognition at KAVACH Hackathon.",
+          "/li Among top 10 national finalists. /li Built a real-time AI violation detector.",
       },
     ],
   },
-
-  // @NOTE: You can add more sections here
-  // {
-  //   title: "Awards",
-  //   items: [
-  //     {
-  //       date: "2023",
-  //       title: "Smart India Hackathon Finalist",
-  //       url: "https://sih.gov.in",
-  //       subTitle: "National Level",
-  //       description:
-  //         "Selected among top national teams for building AI-backed citizen grievance redressal system.",
-  //     },
-  //   ],
-  // },
 ];
