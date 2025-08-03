@@ -137,6 +137,14 @@ export const projectData: ContentWithLinks[] = [
       },
       {
         date: "2025",
+        title: "Image Palette",
+        url: "https://github.com/srummanf/image-palette",
+        subTitle: "Next.js · TailwindCSS · Netlify",
+        description:
+          "/li Extract dominant colors from any image.",
+      },
+      {
+        date: "2025",
         title: "Ramadan Elegance",
         url: "https://github.com/srummanf/Ramadan",
         subTitle: "Next.js · TailwindCSS · Vercel",
