@@ -31,6 +31,11 @@ export const generalData = {
       value: "srummanf",
       href: "https://github.com/srummanf",
     },
+    {
+      label: "Instagram",
+      value: "ig.srummanf",
+      href: "https://www.instagram.com/ig.srummanf",
+    },
   ],
 };
 
