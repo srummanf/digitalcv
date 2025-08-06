@@ -153,6 +153,14 @@ export const projectData: ContentWithLinks[] = [
       },
       {
         date: "2025",
+        title: "pkmncli",
+        url: "https://github.com/srummanf/pkmncli",
+        subTitle: "Python · CLI · PokeAPI",
+        description:
+          "/li Pokemon Stats in your terminal." + "/li Generates custom Pokémon card images using data from the PokéAPI.",
+      },
+      {
+        date: "2025",
         title: "Interactive Candle Blow Birthday Cake",
         url: "https://github.com/srummanf/Interactive-Candle-Blow-Birthday-Cake",
         subTitle: "HTML · CSS · JS",

@@ -63,10 +63,10 @@ export const contentData: ContentData = [
       {
         title: "Full Stack Developer Intern",
         subTitle: "Oxlac - Remote",
-        date: "Oct 2023",
+        date: "Sept 2023 - Oct 2023",
         description:
           "/li Developed and deployed full-stack web applications using the MERN stack, focusing on Next.js and Node.js." +
-          " /li Collaborated with designers and developers to deliver client-facing features and internal tools." +
+          "/li Collaborated with designers and developers to deliver client-facing features and internal tools." +
           " /li Followed agile practices to enhance project efficiency and meet deadlines.",
       },
       {
